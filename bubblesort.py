@@ -39,6 +39,29 @@
 # Sample Input :[-7,2,3,8,-10,4,-6,-10,-2,-7,10,5,2,9,-9,-5,3,8]
 # Sample Output : [-10,-10,-9,-7,-7,-6,-5,-2,2,2,3,3,4,5,8,8,9,10]
 
+# My Solution 1:
+
+# Best, Average, Worst : O(n^2) time | O(1) Space
+
+
+# def bubblesort(array):
+#     i = 0
+#     while i < len(array):
+#         for j in range(len(array) - 1):
+#             if array[j] > array[j + 1]:
+#                 swap(j, j+1, array)
+#         i += 1
+#     return array
+
+
+# def swap(x, y, array):
+#     array[x], array[y] = array[y], array[x]
+
+# My Solution 2:
+# Best : O(n) time | O(1) Space
+# Average : O(n^2) time | O(1) Space
+# Worst : O(n^2) time | O(1) Space
+
 
 def bubblesort(array):
     i = 0
@@ -52,14 +75,10 @@ def bubblesort(array):
         i += 1
     return array
 
-    # for i in range(len(array)):
-
-    # return array
-
 
 def swap(array, x, y):
     array[x], array[y] = array[y], array[x]
 
 
 print(bubblesort([-4, 5, 10, 8, -10, -6, -4, -
-                  2, -5, 3, 5, -4, -5, -1, 1, 6, -7, -6, -7, 8]))
+                  2, -5, 3, 5, -4, -5, -1, 1, 6, -7, -6-7, 8]))
